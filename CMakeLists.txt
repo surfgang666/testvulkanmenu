@@ -10,6 +10,9 @@ option(USE_JAVA_DEMO "Enable JavaFunc code path in demo" OFF)
 
 # Android-specific configuration (only when cross-compiling for Android)
 if (CMAKE_SYSTEM_NAME STREQUAL "Android")
+    # Set Android-specific properties
+    set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+    
     # Add freetype if available (as submodule or system)
     if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/freetype/CMakeLists.txt")
         add_subdirectory(freetype)
