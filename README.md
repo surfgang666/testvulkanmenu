@@ -13,9 +13,10 @@ C++20 static library for rendering ImGui overlays on Android native windows usin
 
 ## Quick Start
 
-### Building the Demo
-
 ```bash
+# Initialize submodules first
+git submodule update --init --recursive
+
 # Set Android NDK path
 export ANDROID_NDK=/path/to/android-ndk
 
@@ -27,6 +28,9 @@ export ANDROID_NDK=/path/to/android-ndk
 ### Building the Library
 
 ```bash
+# Initialize submodules first
+git submodule update --init --recursive
+
 cmake -S . -B build-android \
     -DANDROID_ABI=arm64-v8a \
     -DANDROID_PLATFORM=android-24 \

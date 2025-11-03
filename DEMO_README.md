@@ -6,9 +6,10 @@ This directory contains a demo executable for the AndroidImgui library.
 
 ### Prerequisites
 
-1. Android NDK (set ANDROID_NDK environment variable)
-2. CMake 3.22 or higher
-3. Android development tools (adb for running)
+1. Initialize git submodules: `git submodule update --init --recursive`
+2. Android NDK (set ANDROID_NDK environment variable)
+3. CMake 3.22 or higher
+4. Android development tools (adb for running)
 
 ### Build Commands
 
